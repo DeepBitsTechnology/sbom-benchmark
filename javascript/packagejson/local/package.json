@@ -1,0 +1,7 @@
+{
+    "name": "local-path-test",
+    "version": "0.0.1",
+    "dependencies": {
+        "underscore": "v1"
+    }
+}

@@ -1,0 +1,19 @@
+[INFO]    org.junit.jupiter:junit-jupiter-api:jar:5.9.2:test -- module org.junit.jupiter.api
+[INFO]    org.opentest4j:opentest4j:jar:1.2.0:test -- module org.opentest4j
+[INFO]    org.apiguardian:apiguardian-api:jar:1.1.2:test -- module org.apiguardian.api
+[INFO]    org.slf4j:slf4j-api:jar:2.0.13:compile -- module org.slf4j
+[INFO]    com.google.guava:guava:jar:32.1.2-jre:compile -- module com.google.common [auto]
+[INFO]    com.google.guava:failureaccess:jar:1.0.1:compile -- module failureaccess (auto)
+[INFO]    com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile -- module listenablefuture (auto)
+[INFO]    com.google.code.findbugs:jsr305:jar:3.0.2:compile -- module jsr305 (auto)
+[INFO]    org.checkerframework:checker-qual:jar:3.33.0:compile -- module org.checkerframework.checker.qual [auto]
+[INFO]    com.google.errorprone:error_prone_annotations:jar:2.18.0:compile -- module com.google.errorprone.annotations [auto]
+[INFO]    com.google.j2objc:j2objc-annotations:jar:2.8:compile -- module j2objc.annotations (auto)
+[INFO]    org.mockito:mockito-core:jar:5.11.0:test -- module org.mockito [auto]
+[INFO]    net.bytebuddy:byte-buddy:jar:1.14.12:test -- module net.bytebuddy
+[INFO]    net.bytebuddy:byte-buddy-agent:jar:1.14.12:test -- module net.bytebuddy.agent
+[INFO]    org.objenesis:objenesis:jar:3.3:test -- module org.objenesis [auto]
+[INFO]    com.fasterxml.jackson.core:jackson-databind:jar:2.17.1:compile -- module com.fasterxml.jackson.databind
+[INFO]    com.fasterxml.jackson.core:jackson-annotations:jar:2.17.1:compile -- module com.fasterxml.jackson.annotation
+[INFO]    com.fasterxml.jackson.core:jackson-core:jar:2.17.1:compile -- module com.fasterxml.jackson.core
+[INFO]    org.apache.commons:commons-lang3:jar:3.13.0:compile -- module org.apache.commons.lang3 [auto]

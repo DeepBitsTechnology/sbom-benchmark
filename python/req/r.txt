@@ -1,0 +1,7 @@
+# Line continuations
+numpy \
+==\
+1.26.2
+-c const.txt
+beautifulsoup4
+requests [security] >= 2.8.1, == 2.8.*

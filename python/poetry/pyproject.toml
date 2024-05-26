@@ -1,0 +1,47 @@
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+# https://python-poetry.org/docs/basic-usage/
+
+[project]
+name = "sbombenchmark"
+dependencies = [
+  "httpx",
+  "gidgethub[httpx]>4.0.0",
+  "django>2.1; os_name != 'nt'",
+  "django>2.0; os_name == 'nt'",
+]
+
+[project.optional-dependencies]
+gui = ["PyQt5"]
+cli = [
+  "rich",
+  "click",
+]
+
+[tool.poetry]
+package-mode = false
+
+# Main dependency group
+[tool.poetry.dependencies]
+python = ">=3.8"
+gunicorn = { version = "^21.1", extras = ["gevent"] }
+httpx = "^0.26"
+pendulum = "3.0.0"
+beautifulsoup4 = ">= 4.0.5, < 4.12.3, != 4.11.1"
+
+[tool.poetry.extras]
+pgsql = ["psycopg2"]
+
+# Test group
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+
+# Dev group
+[tool.poetry.group.dev.dependencies]
+requests = "2.19.*"
+
+# Optional group
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"

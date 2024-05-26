@@ -1,0 +1,29 @@
+{
+  "name": "sbom-benchmark-package.json",
+  "version": "0.0.1",
+  "description": "A SBOM benchmark package.json file",
+  "files": ["*"],
+  "dependencies": {
+    "lodash": "= v4.11.2",
+    "chalk": "< 6.8.0",
+    "react": "~v18.3.0",
+    "express": "^v4.19.0",
+    "debug": "v4.3.x",
+    "async": "v*",
+    "fs-extra": "3.0.0 - v11.2.0",
+    "moment": "< 1.1.1 || > v1.5.1 < 1.6.1 || >= v2",
+    "react-dom": "> 18.0.0-rc.1",
+    "mocha": "mochajs/mocha#4727d357ea",
+    "local-path-test": "./local"
+  },
+  "devDependencies": {
+    "domino": "https://github.com/angular/domino.git#8f228f8862540c6ccd14f76b5a1d9bb5458618af",
+  },
+  "author": "Nifury",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeepBitsTechnology/sbom-benchmark.git",
+    "directory": "javascript/packagejson"
+  }
+}
