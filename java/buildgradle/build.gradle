@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //for dependencies found in artifact repositories you can use
+    //the group:name:version notation
+    implementation 'commons-lang:commons-lang:2.6'
+    testImplementation 'org.mockito:mockito:1.9.0-rc1'
+
+    //map-style notation:
+    implementation group: 'com.google.code.guice', name: 'guice', version: '1.0'
+
+    //declaring arbitrary files as dependencies
+    implementation files('jackson.jar')
+
+    //putting all jars from 'libs' onto compile classpath
+    implementation fileTree('libs')
+
+    implementation('org.hibernate:hibernate') {
+        //in case of versions conflict '3.1' version of hibernate wins:
+        version {
+            strictly('3.1')
+        }
+
+        //excluding a particular transitive dependency:
+        exclude module: 'cglib' //by artifact name
+        exclude group: 'org.jmock' //by group
+        exclude group: 'org.unwanted', module: 'iAmBuggy' //by both name and group
+    }
+
+    implementation('com.squareup.okhttp3:okhttp') {
+        version {
+            strictly('4.12.0')
+        }
+
+        //disabling all transitive dependencies of this dependency
+        transitive = false
+    }
+}
