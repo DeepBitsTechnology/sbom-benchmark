@@ -1,0 +1,16 @@
+{
+    "name": "deepbits/benchmark",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": "^7.2.5 || ^8.0",
+        "psr/log": "^1.0 || ^2.0 || ^3.0",
+        "monolog/monolog": "dev-main#2eb0c0978d290a1c45346a1955188929cb4e5db7",
+        "acne/acne": "@dev",
+        "doctrine/doctrine-fixtures-bundle": "4.0.x-dev"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^6.4.1 || ^7.0.1",
+        "ext-mbstring": "*"
+    }
+}

@@ -1,0 +1,36 @@
+[workspace]
+resolver = "2"
+
+[workspace.package]
+rust-version = "1.76"  # MSRV:3
+
+[workspace.dependencies]
+cargo-util-schemas = { version = "0.3.0" }
+toml = "0.8.14"
+toml_edit = { version = "0.22.14", features = ["serde"] }
+
+[lib]
+crate-type = ["cdylib"]
+bench = false
+
+[package]
+name = "benchmark"
+version = "0.0.1"
+rust-version = "1.78"  # MSRV:1
+
+[dependencies]
+cargo-util-schemas.workspace = true
+toml.workspace = true
+toml_edit.workspace = true
+supports-unicode = "3.0.0"
+bytesize = "1.3"
+anyhow = "^1.0"
+clap = "~4"
+color-print = "0.3.*"
+curl = "> 0.4.1"
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[build-dependencies]
+cc = "1.0.3"
